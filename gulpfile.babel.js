@@ -3,13 +3,14 @@ import sass from 'gulp-sass';
 import autoprefixer from 'gulp-autoprefixer';
 import pug from 'gulp-pug';
 import babel from 'gulp-babel';
+import imagemin from 'gulp-imagemin';
 import browserSync from 'browser-sync';
 
 
 let server = browserSync.create();
 
 
-gulp.task('default',['serve','watch'])
+gulp.task('default',['serve','watch','image'])
 
 gulp.task('serve', () => {
 
@@ -27,6 +28,16 @@ gulp.task('watch',() => {
   gulp.watch('./dev/index.pug',['pug'])
 
 })
+
+
+gulp.task('image',() => {
+  gulp.src('./dev/img/*')
+    .pipe(imagemin([
+        imagemin.jpegtran({progressive: true})
+    ]))
+    .pipe(gulp.dest('./public/img/'))
+})
+
 
 
 
