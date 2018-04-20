@@ -1,0 +1,29 @@
+{
+  "name": "teaminfo",
+  "version": "1.0.0",
+  "description": "section where it shows the information of the person when doing click",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ordep96/Team-Info.git"
+  },
+  "author": "Pedro Eduardo Muñoz Alvear",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ordep96/Team-Info/issues"
+  },
+  "homepage": "https://github.com/ordep96/Team-Info#readme",
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "browser-sync": "^2.23.6",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^5.0.0",
+    "gulp-babel": "^7.0.1",
+    "gulp-pug": "^4.0.1",
+    "gulp-sass": "^4.0.1"
+  }
+}
